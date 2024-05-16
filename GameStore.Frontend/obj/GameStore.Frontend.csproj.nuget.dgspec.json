@@ -21,7 +21,8 @@
         ],
         "sources": {
           "/usr/local/share/dotnet/library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/hkEChk5Z6QykY1tfdMyeb7UXyEYKfbSo3pPPaOwFtyijVWViFa/api/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
