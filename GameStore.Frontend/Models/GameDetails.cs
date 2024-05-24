@@ -1,14 +1,20 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Security.Cryptography.X509Certificates;
 
 namespace GameStore.Frontend.Models;
 
 public class GameDetails
 {
     public int Id { get; set; }
+
+    [Required]
+    [StringLength(50)]
     public required string Name { get; set; }
 
+    [Required]
     public string? GenreId{ get; set; }
 
+    [Range(1, 100)]
     public decimal Price { get; set; }
 
     public DateOnly ReleaseDate { get; set; }
