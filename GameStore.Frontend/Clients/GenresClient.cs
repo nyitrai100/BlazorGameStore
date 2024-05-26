@@ -25,7 +25,15 @@ public class GenresClient
         new(){
             Id = 5,
             Name = "Kids and Family"
-        }
+        },
+         new(){
+            Id = 6,
+            Name = "RPG"
+        },
+        new(){
+            Id = 7,
+            Name = "FPS"
+        },
     ];
 
     public Genre[] GetGenres() => genres;
