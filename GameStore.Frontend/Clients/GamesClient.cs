@@ -73,6 +73,12 @@ public class GamesClient
         existingGame.ReleaseDate = updatedGame.ReleaseDate;
     }
 
+    public void DeleteGame(int id)
+    {
+        var game = GetGameSummeryById(id);
+        games.Remove(game);
+    }
+
     private GameSummary GetGameSummeryById(int id)
     {
         GameSummary? game = games.Find(game => game.Id == id);
